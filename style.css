@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: yellow;
+    height: 80vh;    /* 100 vertical height */
+    min-height: 600px;
+    background-image: url("https://i.ibb.co/HNvHSyV/image-header.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+}
+
+.menu span {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.menu span:hover {
+    color: black;
+}
+
+.contact {
+    background-color: white;
+    color: black;
+    padding: 8px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.contact:hover {
+    background-color: #FFB900;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;     /* earlier the direction was default left to right but now we specified it as top to bottom */
+    align-items: center;        /*  left to right */
+    justify-content: center;   /*  top to bottom */
+    font-size: 80px;
+    flex-grow: 1;           /*  now the container can grow as much as it can*/
+    color: white;
+    font-weight: bold;
+}
+
+.arrow {
+    margin-top: 10px;
+    height: 40%;
+}
+
+/* Section 1 & 2 */
+.section1, .section2 {
+    display: flex;
+    height: 400px;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.section1 img, .section2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section1 .text, .section2 .text {
+    width: 70%;
+}
+
+.section1 .left, .section2 .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .text h1, .section2 .text h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    font-family: 'Righteous', cursive;
+}
+
+.section1 .text p, .section2 .text p {
+    color: #848391;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.section1 .text img, .section2 .text img {
+    width: 150px;
+}
+
+.section1 .left .button, .section2 .right .button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Section 3 */
+.section3 {
+    display: flex;
+    height: 400px;
+}
+
+.section3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section3 .left {
+    background-image: url("assets/desktop/image-graphic-design.jpg");
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section3 .right {
+    background-image: url("assets/desktop/image-photography.jpg");
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section3 h1 {
+    color: #234e45;
+    font-size: 20px;
+    margin-bottom: 13px;
+    font-family: 'Righteous', cursive;
+}
+
+.section3 p {
+    text-align: center;
+    color: #234e45;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+/* Section 4 */
+.client-image img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonials {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFBF8;
+    padding: 100px;          /* for all sides */ 
+}
+
+.testimonials h1 {
+    color: #A0A1A2;
+    font-size: 20px;
+    margin-bottom: 90px;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .client {
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client img {
+    margin-bottom: 30px;
+}
+
+.client h2 {
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+}
+
+.client h4 {
+    margin-top: 8px;
+    font-size: 10px;
+    color: #A0A1A2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.client p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #848391;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    font-size: 12px;
+}
+
+.client .details {
+    text-align: center;
+}
+
+/* Section 5 */
+.images {
+    display: flex;
+}
+
+.images div {
+    flex: 0.25;     /* there are 4 images so each gets 25% of the page */ 
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section 6 THE FOOTER */
+.footer {
+    background-color: #90D4C5;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer .logo {
+    margin-top: 50px;
+    color: #2D7465
+}
+
+.footer-navigation {
+    color: #4F9485;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.footer-navigation span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer-navigation span:hover {
+    color: #2D7465;
+}
+
+.footer .social-media {
+    margin-top: 30px;
+}
+
+.social-media img {
+    padding: 8px;
+}
+
+.social-media img:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 575.98px) {
+
+    .section1, .section2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section1 .left, .section2 .right {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .testimonials {
+        height: auto;
+    }
+
+    .clients {
+        flex-direction: column;
+    }
+
+    .client {
+        margin-top: 50px;
+    }
+
+    .images {
+        flex-wrap: wrap;
+    }
+
+    .images div {
+        flex: 0.5;
+        flex-basis: 50%;
+    }
+}
